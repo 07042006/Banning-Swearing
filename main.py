@@ -1,6 +1,19 @@
 import speech_recognition as sr
 from plyer import notification
 
+lulaCoins = 10
+
+def remover_lulaCoins():
+    global lulaCoins
+    lulaCoins = lulaCoins - 1
+    if lulaCoins <= 0:
+        notification.notify(
+        title="LULA COINS ZERADO",
+        message="Seus lula coins foram zerados - Reiniciando PC",
+        app_name="Banning Swearing"
+        )
+
+
 def enviar_notificacao(palavra):
     mensagem = f"Palavra identificada: {palavra}"
     notification.notify(
@@ -34,6 +47,7 @@ def main():
 
             if palavra_identificada:
                 enviar_notificacao(palavra_identificada)
+                remover_lulaCoins();
 
         except sr.UnknownValueError:
             print("Não foi possível entender o áudio")

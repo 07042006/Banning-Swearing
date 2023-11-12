@@ -5,4 +5,5 @@ Automation in Python to ban (punish) for swearing.
 * pip install SpeechRecognition plyer
 * pip install pyaudio
 
-![Banner - Banning Swearing](https://github.com/07042006/Banning-Swearing/assets/50891842/df04d6c3-4bea-4eb5-9c84-4225e06df435)
+![Banner - Banning Swearing](https://github.com/07042006/Banning-Swearing/assets/50891842/9160151f-199c-4df8-8688-2627c2622c3f)
+
